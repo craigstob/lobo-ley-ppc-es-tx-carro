@@ -2888,6 +2888,49 @@ if ( $criteria_safe ) {
 		$send_no_record_found_email = true;
 	}
 }
+?>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+
+    // Helper: safely get a parameter from URL
+    const getParam = (key) => params.get(key) || "";
+
+    const interest = getParam("c");
+    const physical = getParam("c2");
+    const keyword  = getParam("keyword");
+    const city     = getParam("craig");
+
+    const defaultPhone = "<?php echo htmlspecialchars($phone, ENT_QUOTES); ?>";
+
+    // Function to send email via PHP file
+    const sendSwapInfo = (swappedNumber) => {
+      const url = new URL("https://loboley.com/ppc/es/tx/carro/swap-track.php", window.location.origin);
+      url.searchParams.set("c", interest);
+      url.searchParams.set("c2", physical);
+      url.searchParams.set("keyword", keyword);
+      url.searchParams.set("city", city);
+      url.searchParams.set("phone", defaultPhone);
+      url.searchParams.set("swapped_number", swappedNumber);
+
+      fetch(url.toString());
+    };
+
+    // Wait up to 2.5s for the phone number to populate
+    setTimeout(() => {
+      const phoneAnchor = document.querySelector(".gold-button");
+
+      if (phoneAnchor) {
+        const swappedNumber = phoneAnchor.textContent.trim();
+        sendSwapInfo(swappedNumber);
+      } else {
+        // Still send if element not found (optional)
+        sendSwapInfo("Not Found");
+      }
+    }, 2500);
+  });
+</script>
+<?php
 
 $clean_phone = preg_replace( '/\D/', '', $phone );
 
@@ -3782,6 +3825,7 @@ if ( $send_no_record_found_email && $send_email ) {
                                                 for validation purposes and should be left unchanged.
                                             </div>
                                         </div>
+                                        <input type="hidden" value="" name="swapped_number">
                                     </div>
                                 </div>
                                 <div class='gform-footer gform_footer top_label'><input type='submit'
@@ -4060,6 +4104,7 @@ if ( $send_no_record_found_email && $send_email ) {
 
         // Add the 'show' class to the .ctm-phone-number container
         phoneNumberContainer.classList.add('show');
+        document.getElementsByName("swapped_number")[0].value = phoneNumberAnchor.textContent;
 
         // Optionally disconnect the observer after the first change to stop further tracking
         observer.disconnect();
