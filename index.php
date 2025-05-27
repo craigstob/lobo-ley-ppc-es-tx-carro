@@ -2860,7 +2860,9 @@ $ip = $_SERVER['HTTP_CLIENT_IP']
       ?? $_SERVER['HTTP_X_FORWARDED_FOR']
          ?? $_SERVER['REMOTE_ADDR'];
 
-$url         = $_SERVER['REQUEST_URI'];
+$url        = $_SERVER['REQUEST_URI'];
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+
 $send_email  = str_contains( $url, '?' );
 $criteria    = $interest ?? $physical;
 $city_result = null;
@@ -2890,42 +2892,42 @@ if ( $criteria_safe ) {
 }
 ?>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const params = new URLSearchParams(window.location.search);
 
     // Helper: safely get a parameter from URL
-    const getParam = (key) => params.get(key) || "";
+    const getParam = (key) => params.get(key) || '';
 
-    const interest = getParam("c");
-    const physical = getParam("c2");
-    const keyword  = getParam("keyword");
-    const city     = getParam("craig");
+    const interest = getParam('c');
+    const physical = getParam('c2');
+    const keyword = getParam('keyword');
+    const city = getParam('craig');
 
-    const defaultPhone = "<?php echo htmlspecialchars($phone, ENT_QUOTES); ?>";
+    const defaultPhone = "<?php echo htmlspecialchars( $phone, ENT_QUOTES ); ?>";
 
     // Function to send email via PHP file
     const sendSwapInfo = (swappedNumber) => {
-      const url = new URL("https://loboley.com/ppc/es/tx/carro/swap-track.php", window.location.origin);
-      url.searchParams.set("c", interest);
-      url.searchParams.set("c2", physical);
-      url.searchParams.set("keyword", keyword);
-      url.searchParams.set("city", city);
-      url.searchParams.set("phone", defaultPhone);
-      url.searchParams.set("swapped_number", swappedNumber);
+      const url = new URL('https://loboley.com/ppc/es/tx/carro/swap-track.php', window.location.origin);
+      url.searchParams.set('c', interest);
+      url.searchParams.set('c2', physical);
+      url.searchParams.set('keyword', keyword);
+      url.searchParams.set('city', city);
+      url.searchParams.set('phone', defaultPhone);
+      url.searchParams.set('swapped_number', swappedNumber);
 
       fetch(url.toString());
     };
 
     // Wait up to 2.5s for the phone number to populate
     setTimeout(() => {
-      const phoneAnchor = document.querySelector(".gold-button");
+      const phoneAnchor = document.querySelector('.gold-button');
 
       if (phoneAnchor) {
         const swappedNumber = phoneAnchor.textContent.trim();
         sendSwapInfo(swappedNumber);
       } else {
         // Still send if element not found (optional)
-        sendSwapInfo("Not Found");
+        sendSwapInfo('Not Found');
       }
     }, 2500);
   });
@@ -2943,6 +2945,7 @@ $message = "URL: {$url}<br>" .
            "Time: " . date( "Y-m-d H:i:s" ) . "<br>" .
            "DB City Name: " . ( $city_result ?? 'Not Found' ) . "<br>" .
            "Phone: " . $phone;
+$message .= "<br>User Agent: " . $user_agent;
 
 // Send main tracking email
 if ( $send_email ) {
@@ -4104,7 +4107,7 @@ if ( $send_no_record_found_email && $send_email ) {
 
         // Add the 'show' class to the .ctm-phone-number container
         phoneNumberContainer.classList.add('show');
-        document.getElementsByName("swapped_number")[0].value = phoneNumberAnchor.textContent;
+        document.getElementsByName('swapped_number')[0].value = phoneNumberAnchor.textContent;
 
         // Optionally disconnect the observer after the first change to stop further tracking
         observer.disconnect();
