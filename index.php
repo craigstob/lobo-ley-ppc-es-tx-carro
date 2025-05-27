@@ -63,7 +63,108 @@
     <meta property="og:image:type" content="image/webp" class="yoast-seo-meta-tag"/>
     <meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag"/>
     <script type="application/ld+json" class="yoast-schema-graph">
-        {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://loboley.com/g/tx/","url":"https://loboley.com/g/tx/","name":"Abogados de Accidentes en Texas","isPartOf":{"@id":"https://loboley.com/g/tx/#website"},"about":{"@id":"https://loboley.com/g/tx/#organization"},"primaryImageOfPage":{"@id":"https://loboley.com/g/tx/#primaryimage"},"image":{"@id":"https://loboley.com/g/tx/#primaryimage"},"thumbnailUrl":"https://loboley.com/g/tx/wp-content/uploads/2024/12/gus_steve_banner1.webp","datePublished":"2025-01-03T20:24:18+00:00","dateModified":"2025-04-27T22:44:37+00:00","breadcrumb":{"@id":"https://loboley.com/g/tx/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://loboley.com/g/tx/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://loboley.com/g/tx/#primaryimage","url":"https://loboley.com/g/tx/wp-content/uploads/2024/12/gus_steve_banner1.webp","contentUrl":"https://loboley.com/g/tx/wp-content/uploads/2024/12/gus_steve_banner1.webp","width":1920,"height":1241},{"@type":"BreadcrumbList","@id":"https://loboley.com/g/tx/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://loboley.com/g/tx/#website","url":"https://loboley.com/g/tx/","name":"Lobo Ley Abogados De Accidentes","description":"Crim &amp; Villalpando, PC","publisher":{"@id":"https://loboley.com/g/tx/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://loboley.com/g/tx/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://loboley.com/g/tx/#organization","name":"Lobo Ley Abogados De Accidentes","url":"https://loboley.com/g/tx/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://loboley.com/g/tx/#/schema/logo/image/","url":"https://loboley.com/g/tx/wp-content/uploads/2024/12/lobo-logo-1.png","contentUrl":"https://loboley.com/g/tx/wp-content/uploads/2024/12/lobo-logo-1.png","width":700,"height":220,"caption":"Lobo Ley Abogados De Accidentes"},"image":{"@id":"https://loboley.com/g/tx/#/schema/logo/image/"}}]}
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "@id": "https://loboley.com/g/tx/",
+                    "url": "https://loboley.com/g/tx/",
+                    "name": "Abogados de Accidentes en Texas",
+                    "isPartOf": {
+                        "@id": "https://loboley.com/g/tx/#website"
+                    },
+                    "about": {
+                        "@id": "https://loboley.com/g/tx/#organization"
+                    },
+                    "primaryImageOfPage": {
+                        "@id": "https://loboley.com/g/tx/#primaryimage"
+                    },
+                    "image": {
+                        "@id": "https://loboley.com/g/tx/#primaryimage"
+                    },
+                    "thumbnailUrl": "https://loboley.com/g/tx/wp-content/uploads/2024/12/gus_steve_banner1.webp",
+                    "datePublished": "2025-01-03T20:24:18+00:00",
+                    "dateModified": "2025-04-27T22:44:37+00:00",
+                    "breadcrumb": {
+                        "@id": "https://loboley.com/g/tx/#breadcrumb"
+                    },
+                    "inLanguage": "en-US",
+                    "potentialAction": [
+                        {
+                            "@type": "ReadAction",
+                            "target": [
+                                "https://loboley.com/g/tx/"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@type": "ImageObject",
+                    "inLanguage": "en-US",
+                    "@id": "https://loboley.com/g/tx/#primaryimage",
+                    "url": "https://loboley.com/g/tx/wp-content/uploads/2024/12/gus_steve_banner1.webp",
+                    "contentUrl": "https://loboley.com/g/tx/wp-content/uploads/2024/12/gus_steve_banner1.webp",
+                    "width": 1920,
+                    "height": 1241
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://loboley.com/g/tx/#breadcrumb",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home"
+                        }
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://loboley.com/g/tx/#website",
+                    "url": "https://loboley.com/g/tx/",
+                    "name": "Lobo Ley Abogados De Accidentes",
+                    "description": "Crim &amp; Villalpando, PC",
+                    "publisher": {
+                        "@id": "https://loboley.com/g/tx/#organization"
+                    },
+                    "potentialAction": [
+                        {
+                            "@type": "SearchAction",
+                            "target": {
+                                "@type": "EntryPoint",
+                                "urlTemplate": "https://loboley.com/g/tx/?s={search_term_string}"
+                            },
+                            "query-input": {
+                                "@type": "PropertyValueSpecification",
+                                "valueRequired": true,
+                                "valueName": "search_term_string"
+                            }
+                        }
+                    ],
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://loboley.com/g/tx/#organization",
+                    "name": "Lobo Ley Abogados De Accidentes",
+                    "url": "https://loboley.com/g/tx/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "inLanguage": "en-US",
+                        "@id": "https://loboley.com/g/tx/#/schema/logo/image/",
+                        "url": "https://loboley.com/g/tx/wp-content/uploads/2024/12/lobo-logo-1.png",
+                        "contentUrl": "https://loboley.com/g/tx/wp-content/uploads/2024/12/lobo-logo-1.png",
+                        "width": 700,
+                        "height": 220,
+                        "caption": "Lobo Ley Abogados De Accidentes"
+                    },
+                    "image": {
+                        "@id": "https://loboley.com/g/tx/#/schema/logo/image/"
+                    }
+                }
+            ]
+        }
     </script>
     <!-- / Yoast SEO plugin. -->
 
@@ -2788,7 +2889,7 @@ if ( $criteria_safe ) {
 	}
 }
 
-$clean_phone = preg_replace('/\D/', '', $phone);
+$clean_phone = preg_replace( '/\D/', '', $phone );
 
 // Build message
 $message = "URL: {$url}<br>" .
@@ -2844,7 +2945,8 @@ if ( $send_no_record_found_email && $send_email ) {
                 <div class="wp-block-group header_right is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-17124a9a wp-block-group-is-layout-flex">
                     <div class="wp-block-group header_info is-vertical is-content-justification-right is-layout-flex wp-container-core-group-is-layout-1ab1a5d2 wp-block-group-is-layout-flex">
                         <div class="wp-block-group wc-phone-number has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                            <p><a class="gold-button" href="tel:<?php echo $clean_phone; ?>"><?php echo $phone; ?></a></p>
+                            <p><a class="gold-button" href="tel:<?php echo $clean_phone; ?>"><?php echo $phone; ?></a>
+                            </p>
                         </div>
                     </div>
 
@@ -2896,31 +2998,32 @@ if ( $send_no_record_found_email && $send_email ) {
                                 style="font-size:clamp(2.2rem, 2.2rem + ((1vw - 0.2rem) * 2.441), 4rem);letter-spacing:2px;line-height:1">
                                 <strong>Abogados de Accidentes</strong></h1>
 
-                            <?php
-                            $keyword = isset( $_GET['keyword'] ) ? strtolower( $_GET['keyword'] ) : null;
-                            $type = 'Carro';
+							<?php
+							$keyword = isset( $_GET['keyword'] ) ? strtolower( $_GET['keyword'] ) : null;
+							$type    = 'Carro';
 
-                            // Define match patterns to return values
-                            $map = [
-	                            'camión' => 'Camión',
-	                            'camion' => 'Camion',
-	                            'carro'  => 'Carro',
-	                            'auto'   => 'Auto',
-	                            'choque' => 'Choque',
-	                            'coche'  => 'Coche',
-                            ];
+							// Define match patterns to return values
+							$map = [
+								'camión' => 'Camión',
+								'camion' => 'Camion',
+								'carro'  => 'Carro',
+								'auto'   => 'Auto',
+								'choque' => 'Choque',
+								'coche'  => 'Coche',
+							];
 
-                            foreach ( $map as $pattern => $value ) {
-	                            if ( str_contains( $keyword, $pattern ) ) {
-		                            $type = $value;
-                                    break;
-	                            }
-                            }
-                            ?>
+							foreach ( $map as $pattern => $value ) {
+								if ( str_contains( $keyword, $pattern ) ) {
+									$type = $value;
+									break;
+								}
+							}
+							?>
 
                             <h2 class="wp-block-heading has-base-color has-text-color has-link-color wp-elements-ce78e2c4965f420114c4f52fa935836a"
                                 style="margin-bottom:var(--wp--preset--spacing--20);font-size:clamp(1.502rem, 1.502rem + ((1vw - 0.2rem) * 1.353), 2.5rem);">
-                                <strong>de <?php echo $type; ?> en <?php echo $city ? $city . ', TX' : 'Texas'; ?></strong></h2>
+                                <strong>de <?php echo $type; ?>
+                                    en <?php echo $city ? $city . ', TX' : 'Texas'; ?></strong></h2>
 
 
                             <p class="hero_opaque_box has-base-color has-text-color has-background has-link-color wp-elements-13b80215229f9199e56a7be55d08d6e6"
