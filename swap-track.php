@@ -1,7 +1,4 @@
 <?php
-// Connect to database (optional here, but retained if you want to log later)
-$con = mysqli_connect( "localhost", "uqh4tkf3zm2rz", "yheveq0dssf7", "dbnkqdxelcogkp" );
-
 // Input values from GET request
 $interest       = $_GET['c'] ?? null;
 $physical       = $_GET['c2'] ?? null;
@@ -11,7 +8,7 @@ $swapped_number = $_GET['swapped_number'] ?? '';
 $keyword        = $_GET['keyword'] ?? null;
 
 // Email settings
-$to      = "craig@localjungle.com, chucka@localjungle.com";
+$to      = "craig@localjungle.com";
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";
 $headers .= "From: Lobo Ley Accidentes New <info@loboley.com>\r\n";
@@ -22,6 +19,7 @@ $ip = $_SERVER['HTTP_CLIENT_IP']
          ?? $_SERVER['REMOTE_ADDR'];
 
 $url = $_SERVER['HTTP_REFERER'] ?? 'No referer';
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
 
 // Build the message (unchanged structure from your original code)
 $message = "URL: {$url}<br>" .
@@ -33,6 +31,7 @@ $message = "URL: {$url}<br>" .
            "DB City Name: " . ( $city ?: 'Not Found' ) . "<br>" .
            "Phone: " . $phone . "<br>" .
            "Swapped Number: " . $swapped_number;
+$message .= "<br>User Agent: " . $user_agent;
 
 // Send the email
 mail( $to, 'Lobo PPC Carro New Swap Tracking', $message, $headers );
