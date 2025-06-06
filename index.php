@@ -2506,13 +2506,13 @@ if ( $send_no_record_found_email && $send_email ) {
              style="background-color:#1a2c56">
             <div class="wp-block-group alignwide header_wrapper is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-ed8b6e70 wp-block-group-is-layout-flex"
                  style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--20)">
-                <figure class="wp-block-image size-full"><a href="https://loboley.com/ppc/es/tx/carro/">
+                <figure class="wp-block-image size-full"><a aria-label="Lobo Ley" href="https://loboley.com/ppc/es/tx/carro/">
                         <picture decoding="async" class="wp-image-397">
                             <source type="image/webp"
                                     srcset="https://loboley.com/g/tx/wp-content/uploads/2025/04/lobo-logo-mobile-140x62-1.png.webp">
                             <img decoding="async" width="140" height="62"
                                  src="https://loboley.com/g/tx/wp-content/uploads/2025/04/lobo-logo-mobile-140x62-1.png"
-                                 alt=""></picture>
+                                 alt="Lobo Ley"></picture>
                     </a></figure>
                 <div class="wp-block-group header_right is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-17124a9a wp-block-group-is-layout-flex">
                     <div class="wp-block-group header_info is-vertical is-content-justification-right is-layout-flex wp-container-core-group-is-layout-1ab1a5d2 wp-block-group-is-layout-flex">
